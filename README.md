@@ -2,9 +2,6 @@
 
 Personal portfolio website showcasing my skills, projects, interests, and passion as a developer.
 
-![Portfolio Preview](https://via.placeholder.com/1200x600?text=Portfolio+Screenshot)  
-*(Replace this with a real screenshot of your live site later!)*
-
 ## About Me
 
 Hi, I'm Harish (Harxh_17) – a passionate web developer from Coimbatore, India.  
