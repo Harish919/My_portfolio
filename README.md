@@ -34,7 +34,7 @@ When I'm not coding, you'll find me enjoying:
 
 ## Live Demo
 
-🔗 [View Live Portfolio](https://harish919.github.io/My_portfolio/)  
+🔗 [View Live Portfolio](https://portfoli0-hari.netlify.app/)  
 *(Update this link once you deploy it – GitHub Pages is free and easy!)*
 
 ## How to Run Locally
