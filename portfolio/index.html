@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harish Ravi | Portfolio</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
+    <!-- Devicon CDN for Technology Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d0207c9ae1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul id="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Theme Toggle Button -->
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-checkbox">
+                        <input type="checkbox" id="theme-checkbox" />
+                        <div class="slider">
+                            <i class="fa-solid fa-sun sun-icon"></i>
+                            <i class="fa-solid fa-moon moon-icon"></i>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+
+            <div class="header-text">
+                <p id="subtitle" class="typing-effect"></p>
+                <h1 class="glitch" data-text="Hi, I'm Harish Ravi">
+                    Hi, I'm <span>Harish<br />Ravi</span>
+                </h1>
+                <p class="description">Frontend Developer | React Developer</p>
+
+                <div class="social-links">
+                    <a href="https://github.com/Harish919" target="_blank" class="social-icon"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/manish-kulkarni-65102a2a2/" target="_blank"
+                        class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/h4rzzy_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="images/Harish_Resume.pdf" class="resume-btn glow-btn" download>
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="contact-btn">
+                        <i class="fa-solid fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <<!-- About Section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1" data-aos="fade-right">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-ring"></div>
+                            <img src="images/Hari_prof.jpg" alt="Harish Ravi" class="profile-img" />
+                        </div>
+                    </div>
+                    <div class="about-col2" data-aos="fade-left">
+                        <h1 class="subtitle">About Me</h1>
+                        <p class="about-description">
+                            Hi, I'm <strong>Harish R</strong>, a final-year Engineering
+                            student at
+                            <strong>park college of Technology, coimbatore</strong>. I have a
+                            passion for software development, specializing in
+                            <strong>Frontend Development, and React Development</strong>. My
+                            focus is on preparing for software placements and improving my
+                            skills in programming and communication.
+                        </p>
+
+                        <div class="stats-container">
+                            <div class="stat-box">
+                                <h3>7.71</h3>
+                                <p>CGPA</p>
+                            </div>
+                            <div class="stat-box">
+                                <h3>5+</h3>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-box">
+                                <h3>25+</h3>
+                                <p>Problems Solved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coding Stats Section -->
+        <section id="coding-stats">
+            <div class="container">
+                <h2 class="subtitle">Coding Statistics</h2>
+                <p class="section-description">
+                    My journey in learning programming and open source
+                </p>
+
+                <div class="stats-grid">
+                    <!-- GitHub Stats Card -->
+                    <div class="stat-card github-card" data-aos="zoom-in">
+                        <div class="stat-header">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>GitHub Stats</h3>
+                        </div>
+                        <div class="stat-content">
+                            <img src="https://github-readme-stats.vercel.app/api?username=Harish919&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=ff004f&icon_color=ff6b9d&text_color=ffffff&ring_color=ff004f"
+                                alt="GitHub Stats" loading="lazy" />
+                        </div>
+                        <a href="https://github.com/Harish919" target="_blank" class="stat-link">
+                            View Profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub Streak Stats -->
+                    <div class="stat-card streak-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-header">
+                            <i class="fa-solid fa-fire"></i>
+                            <h3>GitHub Streak</h3>
+                        </div>
+                        <div class="stat-content">
+                            <img src="https://streak-stats.demolab.com?user=Harish919&theme=radical&hide_border=true&background=0D1117&stroke=ff004f&ring=ff004f&fire=ff6b9d&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ff004f&sideLabels=ff6b9d&dates=ababab"
+                                alt="GitHub Streak" loading="lazy" />
+                        </div>
+                        <a href="https://github.com/Harish919" target="_blank" class="stat-link">
+                            View Profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Top Languages -->
+                    <div class="stat-card languages-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Most Used Languages</h3>
+                        </div>
+                        <div class="stat-content">
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harish919&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=ff004f&text_color=ffffff&icon_color=ff6b9d"
+                                alt="Top Languages" loading="lazy" />
+                        </div>
+                        <a href="https://github.com/Harish919=repositories" target="_blank" class="stat-link">
+                            View Repositories <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Stats Banner -->
+                <div class="quick-stats-banner" data-aos="fade-up">
+                    <div class="quick-stat">
+                        <i class="fa-solid fa-code-commit"></i>
+                        <div class="quick-stat-info">
+                            <h4>Daily Commits</h4>
+                            <p>Building consistently</p>
+                        </div>
+                    </div>
+                    <div class="quick-stat">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div class="quick-stat-info">
+                            <h4>Problem Solver</h4>
+                            <p>25+ problems solved</p>
+                        </div>
+                    </div>
+                    <div class="quick-stat">
+                        <i class="fa-brands fa-osi"></i>
+                        <div class="quick-stat-info">
+                            <h4>Open Source</h4>
+                            <p>Hacktoberfest contributor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Logos -->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">Skills & Technologies</h1>
+                <p class="section-description">Technologies I work with</p>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category" data-aos="fade-up">
+                        <h2><i class="fa-solid fa-code"></i> Programming Languages</h2>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h2><i class="fa-solid fa-laptop-code"></i> Web Development</h2>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-react-original colored"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h2><i class="fa-solid fa-palette"></i> Frame Works</h2>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-tailwindcss-plain colored"></i>
+                                <span>Tailwind</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-bootstrap-plain colored"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Version Control & Deployment -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h2>
+                            <i class="fa-solid fa-code-branch"></i> Version Control &
+                            Deployment
+                        </h2>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-github-original"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-linux-plain colored"></i>
+                                <span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="subtitle">My Projects</h2>
+                <p class="section-description">Here are some of my recent works</p>
+
+                <div class="project-lists">
+                    <div class="project-item" data-aos="flip-left">
+                        <div class="image-placeholder">
+                            <img src="images/kfc.jpg" alt="Event Ease Project" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/Harish919/kfc_web" target="_blank" class="overlay-btn">View
+                                    Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>KFC Website</h3>
+                            <p>
+                                Our KFC-inspired platform delivers a crispy, responsive UI and a
+                                flavorful user journey, designed to make browsing and ordering
+                                as satisfying as the first bite of Original Recipe chicken.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>Bootstrap CSS</span>
+                                <span>Tailwind CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Harish919/kfc_web" target="_blank" class="btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-aos="flip-left" data-aos-delay="200">
+                        <div class="image-placeholder">
+                            <img src="images/task.jpg" alt="Study Swap Project" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/Harish919/task_manager" target="_blank"
+                                    class="overlay-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Manager</h3>
+                            <p>
+                                "Master your time, elevate your output. A modern task management
+                                solution built for those who value efficiency, featuring a sleek
+                                UI that makes staying organized feel effortless and incredibly
+                                satisfying.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>Bootstrap CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Harish919/task_manager" target="_blank" class="btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="subtitle">Get In Touch</h2>
+                <p class="section-description">
+                    Feel free to reach out for collaborations or just a friendly chat
+                </p>
+
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>h4rish.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 7548881099</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>coimbatore, Karumathampatti</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" data-aos="fade-left">
+                        <div class="form-group">
+                            <input type="text" required />
+                            <label><i class="fa-solid fa-user"></i> Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" required />
+                            <label><i class="fa-solid fa-envelope"></i> Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" required></textarea>
+                            <label><i class="fa-solid fa-message"></i> Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Binge-Worthy Favorites Section -->
+        <section id="favorites">
+            <div class="container">
+                <h2 class="subtitle">When I'm Not Coding...</h2>
+                <p class="section-description"></p>
+
+                <div class="favorites-grid">
+                    <!-- fashion Card -->
+                    <div class="favorite-card" data-aos="flip-up">
+                        <div class="card-shine"></div>
+                        <div class="show-logo">
+                            <img src="images/fassssion.jpg" alt="Better Call Saul Logo" />
+                        </div>
+                        <div class="show-info">
+                            <h3>Fashion & Art</h3>
+                            <p class="show-tagline">
+                                "Forget the rules if you like it wear it"
+                            </p>
+                            <p class="show-description">
+                                "Fashion to me is far more than just clothes—it's a visual language that speaks before
+                                you even open your mouth. It's the most immediate and powerful form of self-expression,
+                                a way to broadcast your personality, mood, values, and story to the world without saying
+                                a word. And it gives me confidence."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- football Card -->
+                    <div class="favorite-card" data-aos="flip-up" data-aos-delay="200">
+                        <div class="card-shine"></div>
+                        <div class="show-logo">
+                            <img src="images/download.jpg" alt="Better Call Saul Logo" />
+                        </div>
+                        <div class="show-info">
+                            <h3>Football</h3>
+                            <p class="show-tagline">"In my mind iam always the best !"</p>
+                            <p class="show-description">
+                                "Fashion to me is far more than just clothes—it's a visual language that speaks before
+                                you even open your mouth. It's the most immediate and powerful form of self-expression,
+                                a way to broadcast your personality, mood, values, and story to the world without saying
+                                a word. And it gives me confidence."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Quote Section -->
+                <div class="fun-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                        "Just like a designer makes perfect outfits that look good, I code clean solutions. No fashion
+                        drama or bad fits, of course!"
+                    </p>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Made with <i class="fa-solid fa-heart"></i> by Harish Ravi | © 2026 All
+                Rights Reserved
+            </p>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollTop" onclick="scrollToTop()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
