@@ -227,8 +227,48 @@ window.addEventListener('scroll', animateOnScroll);
 animateOnScroll(); // Initial check
 
 // Form submission (you can connect to a backend)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+
+/* This code from AI for testing purpose */
+// Selecting your contact form
+const contactForm = document.querySelector('.contact-form');
+
+contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
+
+    // 1. Visual Feedback: Change button text while sending
+    const submitBtn = this.querySelector('.submit-btn span');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = "Sending...";
+
+    // 2. Prepare the data
+    const formData = new FormData(this);
+    
+    // Convert FormData to a plain object for the AJAX request
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+        // 3. Send the request to FormSubmit's AJAX endpoint
+        const response = await fetch("https://formsubmit.co/ajax/7493c0a27343ed4ae1215f81f10afeac", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            // 4. Success Case
+            alert('Thank you, Harish received your message!');
+            this.reset();
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert('Connection error. Please check your internet.');
+    } finally {
+        // 5. Reset button text
+        submitBtn.textContent = originalText;
+    }
 });
