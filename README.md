@@ -26,7 +26,7 @@ I love writing clean, efficient code and turning ideas into beautiful, functiona
 - JavaScript
 - Font Awesome icons
 - AOS (Animate On Scroll)
-- Google Fonts (or custom fonts)
+- Google Fonts 
 
 ## Live Demo
 
